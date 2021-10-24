@@ -10,7 +10,7 @@
 --]]
 
 
-local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalReturns/RedEye/main/UILIB.txt"))()
+local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/IYKYK.txt"))()
 
 local L_2_ = L_1_:AddWindow("Global X", {
 	main_color = Color3.fromRGB(10, 10, 10),
@@ -19,7 +19,7 @@ local L_2_ = L_1_:AddWindow("Global X", {
 	can_resize = true,
 })
 
-local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalReturns/RedEye/main/Module.txt"))()
+local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/So.lua"))()
 local L_4_ = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
 L_4_:Toggle(false)
 L_4_.Tracers = false
