@@ -13,7 +13,7 @@ local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXY
 local L_2_ = L_1_:AddWindow("Global X", {
 	main_color = Color3.fromRGB(10, 10, 10),
 	min_size = Vector2.new(450, 500),
-	toggle_key = Enum.KeyCode.RightShift,
+	toggle_key = Enum.KeyCode.RightControl,
 	can_resize = true,
 })
 
@@ -38,7 +38,8 @@ L_4_.Tracers = false
 L_4_.Names = false
 L_4_.Boxes = false
 L_3_.TeamCheck(false)
-L_3_.VisibleCheck = false
+L_3_.VisibleCheck = true
+L_3_.Airshots = true
 -- // Dependencies
 
 local L_5_ = game:GetService("Workspace")
@@ -78,8 +79,8 @@ end
 local L_15_ = Instance.new("BindableFunction")
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Global X";
-	Text = "Welcome HAZARD X , PLEASE JOIN MY DISCORD SERVER";
+	Title = "Don't Leak";
+	Text = "Leak and I change whitelist";
 	Icon = "RBXID OR BLANK";
 	Duration = "DURATION IN SECONDS";
 	callbakc = L_15_;
@@ -103,8 +104,8 @@ L_19_:AddButton("discord.gg/hazardx", function(L_22_arg0)
 	end
 	local L_24_ = Instance.new("BindableFunction")
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "HAZARD X";
-		Text = "Discord Link Copied On Clipboard";
+		Title = "Remember No Leaking";
+		Text = "Made by 0010 Gang";
 		Icon = "RBXID OR BLANK";
 		Duration = "DURATION IN SECONDS";
 		callbakc = L_24_;
@@ -112,8 +113,8 @@ L_19_:AddButton("discord.gg/hazardx", function(L_22_arg0)
 	})
 end)
 
-L_19_:AddButton("Owner : Comparo#3448", function(L_26_arg0)
-	setclipboard("Comparo#3448")
+L_19_:AddButton("Owner : Global", function(L_26_arg0)
+	setclipboard("Global Was Here")
 	wait(1)
 	local function L_27_func(L_29_arg0)
 		if L_29_arg0 == "Yes" then
@@ -124,12 +125,12 @@ L_19_:AddButton("Owner : Comparo#3448", function(L_26_arg0)
 	end
 	local L_28_ = Instance.new("BindableFunction")
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "HAZARD X";
-		Text = "Discord Link Copied On Clipboard";
+		Title = "Shoutout Curry";
+		Text = "My nigga fr";
 		Icon = "RBXID OR BLANK";
 		Duration = "DURATION IN SECONDS";
 		callbakc = L_28_;
-		Button1 = "Okay, Thanks :)";
+		Button1 = "Lets get it";
 	})
 end)
 
