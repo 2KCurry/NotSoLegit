@@ -1,14 +1,12 @@
 --[[
- ___          ___    ___ ___  ___  ________  ________  ___  __       
-|\  \        |\  \  /  /|\  \|\  \|\   __  \|\   __  \|\  \|\  \     
-\ \  \       \ \  \/  / | \  \\\  \ \  \|\  \ \  \|\  \ \  \/  /|_   
- \ \  \       \ \    / / \ \   __  \ \  \\\  \ \  \\\  \ \   ___  \  
-  \ \  \____   /     \/   \ \  \ \  \ \  \\\  \ \  \\\  \ \  \\ \  \ 
-   \ \_______\/  /\   \    \ \__\ \__\ \_______\ \_______\ \__\\ \__\
-    \|_______/__/ /\ __\    \|__|\|__|\|_______|\|_______|\|__| \|__|
-             |__|/ \|__|                                                                                                                                                                                 
+ ________.__        ___.          .__     
+ /  _____/|  |   ____\_ |__ _____  |  |  
+/   \  ___|  |  /  _ \| __ \\__  \ |  |   
+\    \_\  \  |_(  <_> ) \_\ \/ __ \|  |___
+ \______  /____/\____/|___  (____  /____/ 
+        \/                \/     \/                                                                                                                                           
 --]]
-
+_G.SAEnabled = true
 
 local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/IYKYK.txt"))()
 
@@ -20,6 +18,20 @@ local L_2_ = L_1_:AddWindow("Global X", {
 })
 
 local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/So.lua"))()
+-- // Mains
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputEnded:Connect(function(input, gameProcessed)
+    if input.UserInputType == Enum.UserInputType.Keyboard then
+        local keyPressed = input.KeyCode
+        if keyPressed.Name == 'RightBracket' then
+            L_3_.FOV = L_3_.FOV + 1
+        end
+        if keyPressed.Name == 'LeftBracket' then
+            L_3_.FOV = L_3_.FOV - 1
+        end
+    end
+end)
 local L_4_ = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
 L_4_:Toggle(false)
 L_4_.Tracers = false
@@ -324,7 +336,7 @@ end
 local L_20_
 L_20_ = hookmetamethod(game, "__index", function(L_63_arg0, L_64_arg1)
     -- // Check if it trying to get our mouse's hit or target and see if we can use it
-	if (L_63_arg0:IsA("Mouse") and (L_64_arg1 == "Hit" or L_64_arg1 == "Target") and L_3_.Check()) then
+	if (L_63_arg0:IsA("Mouse") and (L_64_arg1 == "Hit" or L_64_arg1 == "Target") and L_3_.Check()) and _G.SAEnabled then
         -- // Vars
 		local L_65_ = L_3_.SelectedPart
 
@@ -352,4 +364,28 @@ L_7_:BindToRenderStep("AimLock", 0, function()
         -- // Set the camera to face towards the Hit
 		L_11_.CFrame = CFrame.lookAt(L_11_.CFrame.Position, L_68_.Position)
 	end
+end)
+-- // Mains
+game:GetService("UserInputService").InputBegan:connect(function(input)
+if input.KeyCode == Enum.KeyCode.V then
+_G.SAEnabled = true
+end
+end)
+--
+game:GetService("UserInputService").InputBegan:connect(function(input)
+if input.KeyCode == Enum.KeyCode.C then
+_G.SAEnabled = false
+end
+end)
+-- // Fov
+game:GetService("UserInputService").InputBegan:connect(function(input)
+if input.KeyCode == Enum.KeyCode.Minus then
+L_3_.ShowFOV = L_3_.ShowFOV == true
+end
+end)
+--
+game:GetService("UserInputService").InputBegan:connect(function(input)
+if input.KeyCode == Enum.KeyCode.Equals then
+L_3_.ShowFOV = L_3_.ShowFOV == false
+end
 end)
