@@ -92,8 +92,8 @@ local L_17_ = L_2_:AddTab("Esp")
 local L_18_ = L_2_:AddTab("Misc")
 local L_19_ = L_2_:AddTab("Credits")
 
-L_19_:AddButton("discord.gg/hazardx", function(L_22_arg0)
-	setclipboard("https://discord.gg/hazardx")
+L_19_:AddButton("discord.gg/Zeski", function(L_22_arg0)
+	setclipboard("https://discord.gg/Zeski")
 	wait(1)
 	local function L_23_func(L_25_arg0)
 		if L_25_arg0 == "Yes" then
