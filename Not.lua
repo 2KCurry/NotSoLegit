@@ -10,7 +10,7 @@ _G.SAEnabled = true
 
 local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/IYKYK.txt"))()
 
-local L_2_ = L_1_:AddWindow("YX", {
+local L_2_ = L_1_:AddWindow("Aki X", {
 	main_color = Color3.fromRGB(10, 10, 10),
 	min_size = Vector2.new(450, 500),
 	toggle_key = Enum.KeyCode.RightControl,
@@ -79,8 +79,8 @@ end
 local L_15_ = Instance.new("BindableFunction")
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Don't Leak";
-	Text = "Leak and I change whitelist";
+	Title = "Aki X";
+	Text = "Aki On Top";
 	Icon = "RBXID OR BLANK";
 	Duration = "DURATION IN SECONDS";
 	callbakc = L_15_;
