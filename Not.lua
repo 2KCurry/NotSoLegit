@@ -1,6 +1,6 @@
 _G.SAEnabled = true
 
-local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/NotSoLegit/main/IYKYK.txt"))()
+local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/NotSoLegit/main/IYKYK.lua"))()
 
 local L_2_ = L_1_:AddWindow("Santos Premium", {
 	main_color = Color3.fromRGB(10, 10, 10),
