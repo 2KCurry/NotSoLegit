@@ -44,7 +44,7 @@ local L_10_ = L_9_:GetMouse()
 local L_11_ = L_5_.CurrentCamera
 
 local L_12_ = {
-	Background = Color3.fromRGB(24, 24, 24),
+	Background = Color3.fromRGB(0, 0, 0),
 	Glow = Color3.fromRGB(0, 0, 0),
 	Accent = Color3.fromRGB(10, 10, 10),
 	LightContrast = Color3.fromRGB(20, 20, 20),
