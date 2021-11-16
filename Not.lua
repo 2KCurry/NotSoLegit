@@ -47,7 +47,7 @@ local L_12_ = {
 	Background = Color3.fromRGB(0, 0, 0),
 	Glow = Color3.fromRGB(0, 0, 0),
 	Accent = Color3.fromRGB(10, 10, 10),
-	LightContrast = Color3.fromRGB(20, 20, 20),
+	LightContrast = Color3.fromRGB(0, 0, 0),
 	DarkContrast = Color3.fromRGB(14, 14, 14),
 	TextColor = Color3.fromRGB(255, 255, 255)
 }
