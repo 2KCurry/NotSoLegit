@@ -1,23 +1,15 @@
---[[
- ________.__        ___.          .__     
- /  _____/|  |   ____\_ |__ _____  |  |  
-/   \  ___|  |  /  _ \| __ \\__  \ |  |   
-\    \_\  \  |_(  <_> ) \_\ \/ __ \|  |___
- \______  /____/\____/|___  (____  /____/ 
-        \/                \/     \/                                                                                                                                           
---]]
 _G.SAEnabled = true
 
-local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/IYKYK.txt"))()
+local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/NotSoLegit/main/IYKYK.txt"))()
 
-local L_2_ = L_1_:AddWindow("Aki X", {
+local L_2_ = L_1_:AddWindow("Santos Premium", {
 	main_color = Color3.fromRGB(10, 10, 10),
 	min_size = Vector2.new(450, 500),
 	toggle_key = Enum.KeyCode.RightControl,
 	can_resize = true,
 })
 
-local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/So.lua"))()
+local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/NotSoLegit/main/So.lua"))()
 -- // Mains
 local UserInputService = game:GetService("UserInputService")
 
@@ -79,8 +71,8 @@ end
 local L_15_ = Instance.new("BindableFunction")
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Aki X";
-	Text = "Aki On Top";
+	Title = "SantosPremium";
+	Text = "Loaded..";
 	Icon = "RBXID OR BLANK";
 	Duration = "DURATION IN SECONDS";
 	callbakc = L_15_;
@@ -92,8 +84,8 @@ local L_17_ = L_2_:AddTab("Esp")
 local L_18_ = L_2_:AddTab("Misc")
 local L_19_ = L_2_:AddTab("Credits")
 
-L_19_:AddButton("discord.gg/Zeski", function(L_22_arg0)
-	setclipboard("https://discord.gg/Zeski")
+L_19_:AddButton("discord.gg/", function(L_22_arg0)
+	setclipboard("https://discord.gg/")
 	wait(1)
 	local function L_23_func(L_25_arg0)
 		if L_25_arg0 == "Yes" then
@@ -113,8 +105,8 @@ L_19_:AddButton("discord.gg/Zeski", function(L_22_arg0)
 	})
 end)
 
-L_19_:AddButton("Owner : Global", function(L_26_arg0)
-	setclipboard("Global Was Here")
+L_19_:AddButton("Owner : Curry", function(L_26_arg0)
+	setclipboard("Best SilentAim")
 	wait(1)
 	local function L_27_func(L_29_arg0)
 		if L_29_arg0 == "Yes" then
@@ -123,15 +115,6 @@ L_19_:AddButton("Owner : Global", function(L_26_arg0)
 			print("User said no")
 		end
 	end
-	local L_28_ = Instance.new("BindableFunction")
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Shoutout Curry";
-		Text = "My nigga fr";
-		Icon = "RBXID OR BLANK";
-		Duration = "DURATION IN SECONDS";
-		callbakc = L_28_;
-		Button1 = "Lets get it";
-	})
 end)
 
 L_18_:AddButton("Fly (X)", function(L_30_arg0)
