@@ -118,7 +118,7 @@ L_19_:AddButton("Owner : Curry", function(L_26_arg0)
 end)
 
 L_18_:AddButton("Fly (X)", function(L_30_arg0)
-    local plr = game.Players.LocalPlayer
+	local plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
 local char = plr.Character
 
@@ -187,36 +187,6 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
     )
     end
 end
-	L_31_.KeyDown:connect(function(L_42_arg0)
-		if L_42_arg0:lower() == "x" then
-			if L_34_ then
-				L_34_ = false
-			else
-				L_34_ = true
-				Fly()
-			end
-		elseif L_42_arg0:lower() == "w" then
-			L_36_.f = 1
-		elseif L_42_arg0:lower() == "s" then
-			L_36_.b = -1
-		elseif L_42_arg0:lower() == "a" then
-			L_36_.l = -1
-		elseif L_42_arg0:lower() == "d" then
-			L_36_.r = 1
-		end
-	end)
-	L_31_.KeyUp:connect(function(L_43_arg0)
-		if L_43_arg0:lower() == "w" then
-			L_36_.f = 0
-		elseif L_43_arg0:lower() == "s" then
-			L_36_.b = 0
-		elseif L_43_arg0:lower() == "a" then
-			L_36_.l = 0
-		elseif L_43_arg0:lower() == "d" then
-			L_36_.r = 0
-		end
-	end)
-	Fly()
 end)
 
 L_18_:AddButton("Headless", function(L_44_arg0)
