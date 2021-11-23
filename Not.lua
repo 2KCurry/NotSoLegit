@@ -187,6 +187,8 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
     )
     end
 end
+ 
+game:GetService("UserInputService").InputBegan:connect(TrashTalk)
 end)
 L_18_:AddButton("Headless", function(L_44_arg0)
 	local L_45_ = game.Players.LocalPlayer.Character
