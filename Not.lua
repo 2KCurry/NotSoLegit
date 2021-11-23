@@ -117,8 +117,8 @@ L_19_:AddButton("Owner : Curry", function(L_26_arg0)
 	end
 end)
 
-L_18_:AddButton("Fly (X)", function(L_30_arg0)
-	local plr = game.Players.LocalPlayer
+L_18_:AddButton("Shit Talk (J)", function(L_30_arg0)
+    local plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
 local char = plr.Character
 
@@ -188,7 +188,6 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
     end
 end
 end)
-
 L_18_:AddButton("Headless", function(L_44_arg0)
 	local L_45_ = game.Players.LocalPlayer.Character
 	L_45_.Head.Transparency = 1
