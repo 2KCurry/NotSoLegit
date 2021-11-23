@@ -118,9 +118,9 @@ L_19_:AddButton("Owner : Curry", function(L_26_arg0)
 end)
 
 L_18_:AddButton("Shit Talk (J)", function(L_30_arg0)
-    local L_31_ = game.Players.LocalPlayer
-repeat wait() until L_32_.Character
-local char = L_33_.Character
+    local plr = game.Players.LocalPlayer
+repeat wait() until plr.Character
+local char = plr.Character
 
 local garbage = {
     "ur bad";
