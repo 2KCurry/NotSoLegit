@@ -3,7 +3,7 @@ _G.SAEnabled = true
 local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/NotSoLegit/main/IYKYK.lua"))()
 
 local L_2_ = L_1_:AddWindow("Santos Premium", {
-	main_color = Color3.fromRGB(7, 177, 255),
+	main_color = Color3.fromRGB(85, 0, 255),
 	min_size = Vector2.new(450, 500),
 	toggle_key = Enum.KeyCode.RightControl,
 	can_resize = true,
