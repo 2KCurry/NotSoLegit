@@ -83,7 +83,7 @@ local L_16_ = L_2_:AddTab("Aimlock")
 local L_17_ = L_2_:AddTab("Esp")
 local L_18_ = L_2_:AddTab("Misc")
 local L_19_ = L_2_:AddTab("Credits")
-local L_20_ = L_2_:AddTab("FieldOfView")
+local L_20_ = L_2_:AddTab("FOV")
 
 L_19_:AddButton("discord.gg/", function(L_22_arg0)
 	setclipboard("https://discord.gg/")
