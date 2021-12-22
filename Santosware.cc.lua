@@ -505,11 +505,6 @@ Library.theme.topheight = 50
 Library.theme.fontsize = 15
 Library.theme.titlesize = 17
 
-if PuppywareSettings.Watermark == true then
-
-Library:CreateWatermark("Santosware.cc | {fps} | {game}")
-
-end
 
 local Window = Library:CreateWindow(Script.Name, Vector2.new(492, 598), Enum.KeyCode.RightShift)
 local LegitTab = Window:CreateTab("Legit")
