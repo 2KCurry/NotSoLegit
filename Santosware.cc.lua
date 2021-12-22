@@ -697,7 +697,7 @@ local Undergroundwallbangtoggle = AntiAimSeciton:AddToggle('Underground Wallbang
     end)
 end)
 
-Undergroundwallbangtoggle:AddKeybind(Enum.KeyCode.X)
+Undergroundwallbangtoggle:AddKeybind(Enum.KeyCode.L)
 
 AntiAimSeciton:AddToggle('No Auto Rotate', false, function(State)
 Settings.AntiAim.NoAutoRotate = State
